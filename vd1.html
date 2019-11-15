@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slideshow - bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="vd1.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="fontawesome-free-5.11.2-web/js/all.js"></script>
+	<script type="text/javascript">
+		$('.carousel').carousel({
+  				interval: 2000
+		})
+	</script>
+</head>
+<body>
+		<div class="container">
+			<!-- Slide Show -->
+			<div class="carousel slide" data-ride="carousel" id="slideshow">
+				<!-- Indicator - các đường gạch hoặc hình tròn cho từng slide -->
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#slideshow"></li>
+					<li data-slide-to="1" data-target="#slideshow"></li>
+				</ol>
+				<!-- các slide -->
+				<!-- Ảnh và nội dung slide -->
+				<div class="carousel-inner">
+					<!-- Slide 1 -->
+					<div class="carousel-item active">
+						<img src="http://file.vforum.vn/hinh/2016/08/anh-dep-ve-chau-au-thap-eiffel-cua-phap-5.jpg" class="img-fluid">
+						<!-- Chứa nội dung : tiêu đề và mô tả ngắn -->
+						<div class="carousel-caption">
+							<h5>Tiêu đề của slide chúng ta ở đây</h5>
+							<p>Mô tả</p>
+						</div>
+					</div>
+					<!-- Slide 2 -->
+					<div class="carousel-item ">
+						<img src="http://lamarquedalat.com/wp-content/uploads/2019/03/ho-xuan-huong.jpg" class="img-fluid">
+						<!-- Chứa nội dung : tiêu đề và mô tả ngắn -->
+						<div class="carousel-caption">
+							<h5>Tiêu đề của slide chúng ta ở đây</h5>
+							<p>Mô tả</p>
+						</div>
+					</div>
+			1	</div>
+				<!-- các nút tiến lùi -->
+				<a href="#slideshow" class="carousel-control-next" role="button" data-slide="next">
+					<!-- Icon next -->
+					<span class="carousel-control-next-icon"></span>
+				</a>
+				<a href="#slideshow" class="carousel-control-prev" role="button" data-slide="prev">
+					<!-- Icon -->
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+			</div>
+		</div>
+</body>
+</html>
